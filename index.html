@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header class="flex justify-around items-center p-5 bg-black text-white text-lg">
+    <header class="flex justify-around items-center p-3 bg-blue-300 text-white text-lg">
         <h1 class="text-xl font-bold border-b-2 border-blue-500">PORTAFOLIO</h1>
-        <nav class="list-none flex gap-5 items-center">
+        <nav class="list-none lg:flex gap-5 items-center hidden">
             <li class="text-blue-400 border-b-2 border-blue-300 "><a href="">PRESENTACION</a></li>
             <li class="hover:border-b-2 border-blue-300 hover:text-blue-300"><a href="#proyectos">PROYECTOS</a></li>
             <li class="hover:border-b-2 border-blue-300 hover:text-blue-300"><a href="">EXPERIENCIA</a></li>
@@ -24,12 +24,16 @@
     </header>
     <main class="bg-[url('img/51378434.jpg')]  bg-cover">
         <section class="">
-            <article class="grid grid-cols-2 justify-items-center items-center text-white">
+            <article class="flex flex-col md:flex-row py-3 justify-center items-center text-white">
 
-                <div class=" border-l-4 pl-4 border-blue-300">
-                    <h2 class="text-6xl font-bold">OSNEIVER CARDENAS</h2>
-                    <h4 class="text-2xl font-bold text-blue-500">Programador Web Full-stack { }</h4>
-                    <div class="text-4xl">
+                <figure class="max-w-[300px]">
+                    <img src="img/persona1.svg" alt="">
+                </figure>
+
+                <div class=" border-l-4 pl-4 border-blue-300 ">
+                    <h2 class="sm:text-6xl text-2xl font-bold">OSNEIVER <span class="text-blue-300">CARDENAS</span></h2>
+                    <h4 class="text-xl font-bold text-blue-500">Programador Web Full-stack { }</h4>
+                    <div class="md:text-4xl text-2xl">
                         <i
                             class="mx-2 mt-5 fa-brands fa-github hover:text-blue-500 cursor-pointer hover:scale-125 transition-all"></i>
                         <i
@@ -43,28 +47,25 @@
                     </div>
 
                     <button href="#"
-                        class="bg-blue-500 mt-10 w-fit border-2 p-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 hover:scale-110 transition-transform"><i
+                        class="bg-blue-500 mt-10 w-fit border-2 p-2 border-blue-300 rounded-md md:text-2xl shadow-lg shadow-blue-500/50 hover:scale-110 transition-transform"><i
                             class="fa-solid fa-file-zipper"></i> Descargar Currículo</button>
                 </div>
 
-                <figure class="">
-                    <img src="img/persona1.svg" alt="">
-                </figure>
+                
             </article>
         </section>
 
-        <section id="proyectos" class="mb-[15%]">
+        <section id="proyectos" class="mb-[5%]">
 
-            <div class="my-10 leading-10 text-center">
-                <p class="text-lg font-medium tracking-[0.40rem] text-blue-500 px-6">Mejores proyectos </p>
-                <span class="font-bold text-white text-6xl border-b-4 border-blue-600 px-6">Mis Proyectos</span>
+            <div class="my-5 leading-10 text-center">
+                <p class="text-sm font-medium tracking-[0.30rem] text-blue-500 px-6">Mejores proyectos </p>
+                <span class="font-bold text-white text-4xl border-b-4 border-blue-600 px-6">Mis Proyectos</span>
             </div>
 
 
-            <article class="grid grid-cols-3 gap-4 mx-[10%]">
+            <article class="flex flex-col md:flex-row md:justify-center items-center gap-5 mx-[5%] ">
 
-                <div
-                    class="flex cursor-pointer bg-black border-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white col-span-2 ">
+                <div class="flex flex-col cursor-pointer bg-black border-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white max-w-[500px]">
                     <figure class="group flex rounded-r-3xl relative">
                         <img class="group-hover:brightness-50 transition-all" src="img/Mockups/PAGEMOTULMOTOS.jpg"
                             alt="">
@@ -72,7 +73,7 @@
                             src="img/Mockups/Recortes/817shots_so.png" alt="">
                     </figure>
 
-                    <div class="p-5 w-fit">
+                    <div class="p-5">
                         <h4 class="font-bold border-b-2 border-blue-300 text-blue-200">MOTULMOTOS</h4>
                         <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis
                             quam modi praesentium qui velit veritatis, saepe quia. Mollitia, eveniet rerum sequi natus
@@ -100,62 +101,12 @@
                                     class="fa-solid fa-laptop hover:text-violet-500 cursor-pointer hover:scale-125 transition-transform"></i>
                             </div>
                         </div>
-                        <!-- <button href="#"
-                            class="mt-5 w-full border-2 p-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 font-bold hover:text-blue-400 transition-colors">Ver
-                            Paguina</button> -->
                     </div>
 
 
                 </div>
 
-                <div
-                    class="bg-black border-2  border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white overflow-hidden">
-                    <img class="rounded-b-3xl hover:scale-110 hover:skew-y-3 transition-transform"
-                        src="img/Mockups/MIniatura Calculator v1.jpg" alt="">
-                    <div class="p-5">
-                        <h4 class="font-bold border-b-2 border-blue-300 text-blue-200">CALCULADORA</h4>
-                        <p class="text-sm text-center">Una solución Simple pero muy eficiente al momento de sacar cuentas y cuotas a
-                            créditos </p>
-                        <div class="text-4xl text-center mt-5">
-                            <i
-                                class="mx-2 fa-brands fa-html5 hover:text-orange-500 cursor-pointer hover:scale-125 transition-transform"></i>
-                            <i
-                                class="mx-2 fa-brands fa-css3-alt hover:text-blue-500 cursor-pointer hover:scale-125 transition-transform"></i>
-                            <i
-                                class="mx-2 fa-brands fa-js hover:text-yellow-500 cursor-pointer hover:scale-125 transition-transform"></i>
-                            <i class="border-l-2 pl-5 fa-solid fa-code cursor-pointer"></i>
-                        </div>
-                        <!-- <button href="#"
-                            class="mt-5 w-full border-2 p-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 font-bold hover:text-blue-400">Ver
-                            Paguina</button> -->
-
-                    </div>
-                </div>
-
-
-                <div
-                    class=" bg-black border-2  border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white overflow-hidden">
-                    <img class="rounded-b-3xl hover:scale-110 hover:skew-y-3 transition-transform"
-                        src="img/Mockups/848shots_so.png" alt="">
-                    <div class="p-5">
-                        <h4 class="font-bold border-b-2 border-blue-300 text-blue-200">VETERINARIA</h4>
-                        <p class="text-sm text-center">Esta plantilla es hecha con el fin de mostrar la estructuración de mis
-                            proyectos.</p>
-                        <div class="text-4xl text-center mt-5">
-                            <i class="mx-2 fa-brands fa-html5 hover:text-orange-500 cursor-pointer"></i>
-                            <i class="mx-2 fa-brands fa-css3-alt hover:text-blue-500 cursor-pointer"></i>
-                            <i class="mx-2 fa-brands fa-js hover:text-yellow-500 cursor-pointer"></i>
-                            <i class="border-l-2 pl-5 fa-brands fa-github cursor-pointer"></i>
-                        </div>
-                        <!-- <button href="#"
-                            class="mt-5 w-full border-2 p-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 font-bold hover:text-blue-400">Ver
-                            Paguina</button> -->
-                    </div>
-
-                </div>
-
-                <div
-                    class="flex cursor-pointer bg-black border-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white col-span-2 ">
+                <div class="flex flex-col cursor-pointer bg-black border-2 border-blue-300 rounded-md text-2xl shadow-lg shadow-blue-500/50 text-white max-w-[500px] ">
                     <figure class="group flex rounded-r-3xl relative">
                         <img class="group-hover:brightness-50 transition-all" src="img/Mockups/Miniatura CCFM2.jpg"
                             alt="">
@@ -200,114 +151,88 @@
         </section>
 
         <section id="experiencia">
-            <article class="mx-[10%] flex flex-col">
-                <div class="my-10 leading-10 text-center">
-                    <p class="text-lg font-medium tracking-[0.40rem] text-blue-500 px-6">MI TRANSCURSO </p>
-                    <span class="font-bold text-white text-6xl border-b-4 border-blue-600 px-6">EXPERIENCIA</span>
+            <article class="">
+                <div class="my-10 text-center">
+                    <p class="text-lg font-medium tracking-[0.30rem] text-sm text-blue-500">MI TRANSCURSO </p>
+                    <span class="font-bold text-white text-4xl border-b-4 border-blue-600 ">EXPERIENCIA</span>
                 </div>
 
 
+                <div class="mx-[5%]">
+                
+                    <h4 class="font-bold sm:text-4xl text-center mb-10 text-blue-300 border-b-2 border-blue-400 pb-2">
+                        ESTUDIOS</h4>
+                    <div class="flex  md:justify-center flex-row gap-3 overflow-x-auto">
 
-
-                <div class="flex gap-5 relative">
-                    <div class="bg-slate-800 w-full h-24 absolute bottom-0 z-[10] opacity-[0.8] text-center text-white text-2xl flex justify-center items-center rounded-md "> <h6 class="hover:underline cursor-pointer">Leer mas...</h6></div>
-                    <div class="text-white overflow-y-hidden h-[600px]">
-                        <h4 class="font-bold text-4xl text-center mb-10 text-blue-300 border-b-2 border-blue-400 pb-2">
-                            ESTUDIOS</h4>
-                            <div class="bg-gray-700 p-5 rounded-md group relative">
-                                <div class=" group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">Analisis Y Desarrollo De Software - SENA</h4>
-                                    <h6 class="text-blue-200">Oct-2023 / Mayo-2024</h6>
-                                    <p class="max-w-[700px] text-gray-300">Mi paso por el SENA fue una experiencia valiosa, Sin embargo, mi ambición y mi deseo de progresar a un ritmo más acelerado me llevaron a tomar la difícil decisión de salirme.
-
-                                        Sentía que mi potencial no se desarrollaba al máximo dentro de la estructura del SENA. Anhelaba explorar nuevas oportunidades, profundizar en áreas específicas y adquirir conocimientos de manera más dinámica.</p>
+                           
+                        <div class="bg-gray-700  rounded-md min-w-[300px] max-h-[600] md:max-w-[300px]">
+                                <img src="img/Certificados/Certificado ReackJs.jpg" alt="" class="h-[230px]">
+                                <div class=" group-hover:brightness-50 p-5">
+                                    <h4 class="font-bold text-2xl pb-5 text-white">React Developer </h4>
+                                    <p class="text-gray-300 line-clamp-3">Mi paso por la academia no solo me brindó una base sólida en desarrollo web, sino que también me impulsó a embarcarme en un viaje emocionante: especializarme en React, una de las tecnologías front-end más demandadas del momento.</p>
+                                    <date class="block text-gray-500  text-right">Junio-2023 / Dic-2023</date>
                                 </div>
-                                <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-20 inset-x-[30%]  hidden group-hover:block ">NO TERMINADO</button>
-                            </div>
-                            <br>
-                            <div class="bg-gray-700 p-5 rounded-md group relative">
-                                <div class=" group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">React Developer - Syntactic
-                                    </h4>
-                                    <h6 class="text-blue-200">Junio-2023 / Dic-2023</h6>
-                                    <p class="max-w-[700px] text-gray-300">Mi paso por la academia no solo me brindó una base sólida en desarrollo web, sino que también me impulsó a embarcarme en un viaje emocionante: especializarme en React, una de las tecnologías front-end más demandadas del momento.</p>
-                            </div>
-                            <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block">DESCARGAR CERTIFICADO</button>
+
                         </div>
 
-                            <br>
-                            <div class="bg-gray-700 p-5 rounded-md group relative">
-                                <div class=" group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">Full Stack - Syntactic
-                                    </h4>
-                                    <h6 class="text-blue-200">Junio-2023 / Dic-2023</h6>
-                                    <p class="max-w-[700px] text-gray-300">Allí, adquirí las bases y la pasión por el desarrollo web, descubrí habilidades blandas esenciales y, sobre todo, comprendí el poder ilimitado de mi mente. La Academia encendió el faro que ilumina mi camino profesional, impulsándome a perseguir mis sueños con determinación y sin límites.</p>
+                        <div class="bg-gray-700 rounded-md max-h-[600px] min-w-[300px] md:max-w-[300px]">
+                                <img src="img/Certificados/Certificado Full Stack.jpg" alt="" class="h-[230px]">
+                                <div class=" group-hover:brightness-50 p-5">
+                                        <h4 class="font-bold text-2xl text-white pb-5">Developer Full Stack </h4>
+                                        <p class="max-w-[700px] text-gray-300 line-clamp-3">Allí, adquirí las bases y la pasión por el desarrollo web, descubrí habilidades blandas esenciales y, sobre todo, comprendí el poder ilimitado de mi mente. La Academia encendió el faro que ilumina mi camino profesional, impulsándome a perseguir mis sueños con determinación y sin límites.</p>
+                                        <data class="text-blue-200 block text-right text-gray-500">Junio-2023 / Dic-2023</data>
+                                </div>
+
+                        </div>
+                        
+                        <div class="bg-gray-700 rounded-md min-w-[300px] max-w-[600px] md:max-w-[300px]">
+                            <img src="img/Certificados/certificad-curso-api-rest.png" alt="" class="h-[230px]">
+                            <div class=" group-hover:brightness-50 p-5">
+                                <h4 class="font-bold text-2xl text-white pb-5">Api Rest</h4>
+                                <p class="text-gray-300 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam accusamus odit eos! Ad itaque aspernatur neque? Saepe obcaecati iste iure iusto vero aliquam, explicabo, culpa harum ab veritatis aspernatur.</p>
+                                <date class="text-blue-200 block text-right text-gray-500">Mar-2022 / Dic-2022</date>
                             </div>
-                            <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block">DESCARGAR CERTIFICADO</button>
+                                </div>
+
+                        <div class="bg-gray-700 rounded-md min-w-[300px] max-w-[600px] md:max-w-[300px]">
+
+                            <img src="img/Certificados/3. Certificado (Uparsistem) scan_page-0001.jpg" alt="" class="h-[230px]">
+                            <div class=" group-hover:brightness-50 p-5">
+                                <h4 class="font-bold text-2xl text-white pb-5">Mantenimientos de Computo</h4>
+                                <p class="text-gray-300 line-clamp-3">la puerta de entrada a un universo de oportunidades en el ámbito de los sistemas. Allí, adquirí conocimientos fundamentales, exploré diversas áreas y descubrí la confianza en mis propias capacidades.</p>
+                                <date class="text-blue-200 block text-right text-gray-500">Mar-2022 / Dic-2022</date>
+                            </div>
                         </div>
-                        <br>
-                        <div class="bg-gray-700 p-5 rounded-md group relative">
-                            <div class=" group-hover:brightness-50">
-                                <h4 class="font-bold text-xl text-blue-400">Mantenimientos De Equipos de Computo - Uparsistem
-                                </h4>
-                                <h6 class="text-blue-200">Mar-2022 / Dic-2022</h6>
-                            <p class="max-w-[700px] text-gray-300">la puerta de entrada a un universo de oportunidades en el ámbito de los sistemas. Allí, adquirí conocimientos fundamentales, exploré diversas áreas y descubrí la confianza en mis propias capacidades.</p>
+
+                        <div class="bg-gray-700 rounded-md min-w-[300px] max-w-[600px] md:max-w-[300px]">
+                        <img src="img/Certificados/3. Certificado (Uparsistem) scan_page-0004.jpg" alt="" class="h-[230px]">
+                        <div class=" group-hover:brightness-50 p-5">
+                            <h4 class="font-bold text-2xl text-white pb-5">Domotica e Inmotica</h4>
+                            <p class="text-gray-300 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, aliquam optio, quia distinctio temporibus similique incidunt magnam consectetur recusandae reiciendis ullam. Cum ratione, accusamus quibusdam rerum voluptatum magnam ipsa quidem.</p>
+                            <date class="text-blue-200 block text-right text-gray-500">Mar-2022 / Dic-2022</date>
                         </div>
-                        <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block ">DESCARGAR CERTIFICADO</button>
+                        </div>
+
+                        <div class="bg-gray-700 rounded-md min-w-[300px] max-w-[600px] md:max-w-[300px]">
+                    <img src="img/Certificados/3. Certificado (Uparsistem) scan_page-0003.jpg" alt="" class="h-[230px]">
+                    <div class=" group-hover:brightness-50 p-5">
+                        <h4 class="font-bold text-2xl text-white pb-5">Mencion de Honor</h4>
+                        <p class="text-gray-300 line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam accusamus odit eos! Ad itaque aspernatur neque? Saepe obcaecati iste iure iusto vero aliquam, explicabo, culpa harum ab veritatis aspernatur.</p>
+                        <date class="text-blue-200 block text-right text-gray-500">Mar-2022 / Dic-2022</date>
                     </div>
+                        </div>
 
                     </div>
                     
-                    
-                    <div class="text-white overflow-y-hidden h-[600px] htts relative">
-                        
-                        
-                        <h4 class="font-bold text-4xl text-center mb-10 text-blue-300 border-b-2 border-blue-400 pb-2">
-                            TRABAJOS</h4>
-
-                            <div class="bg-gray-700 p-5 group rounded-md relative">
-                                <div class="group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">Desarrollador De Software - MotulMotos</h4>
-                                    <h6 class="text-blue-200">Mar-2022 / may-2023</h6>
-                                    <p class="max-w-[700px] text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Quam consequuntur, quibusdam pariatur odio nam ab soluta perferendis nihil
-                                        possimus sed ea ratione nisi praesentium est quo quod, iure suscipit odit.</p>
-                                </div>
-                                <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block rounded">VER PAGUINA</button>
-                            </div>
-
-                            <br>
-
-                            <div class="bg-gray-700 p-5 rounded-md group relative">
-                                <div class=" group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">Desarrollador De Software - Construciones Media Luna</h4>
-                                    <h6 class="text-blue-200">Enero-2023 / jul-2023</h6>
-                                    <p class="max-w-[700px] text-gray-300"> Allí, adquirí las bases y la pasión por el desarrollo web, descubrí habilidades blandas esenciales y, sobre todo, comprendí el poder ilimitado de mi mente. La Academia encendió el faro que ilumina mi camino profesional, impulsándome a perseguir mis sueños con determinación y sin límites.</p>
-                                </div>
-                                <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block rounded">VER PAGUINA</button>
-                            </div>
-
-                            <br>
-
-                            <div class="bg-gray-700 p-5 rounded-md group relative">
-                                <div class=" group-hover:brightness-50">
-                                    <h4 class="font-bold text-xl text-blue-400">Tecnico De Sistemas - Clínica Valledupar</h4>
-                                    <h6 class="text-blue-200">Enero-2023 / jul-2023</h6>
-                                    <p class="max-w-[700px] text-gray-300">La Clínica Valledupar marcó un hito trascendental en mi trayectoria. conocí gente increíble. Estas experiencias me enriquecieron, me enseñaron el valor de las relaciones y me impulsaron a seguir adelante. Agradezco profundamente las lecciones aprendidas..</p>
-                                </div>
-                                <button class="p-3 mt-5 border-2 border-blue-400 absolute bottom-14 inset-x-[30%] bg-blue-500 hidden group-hover:block ">DESCARGAR COMPROVANTE</button>
-                            </div>
-                    </div>
-
                 </div>
             </article>
         </section>
 
         <section id="contacto" class="mx-[10%] my-20">
             <article>
-                <div class="grid grid-cols-2">
+                <div class="grid sm:grid-cols-2">
                     <div class="max-w-[500px]">
-                        <h4 class="text-4xl text-white tracking-[0.40rem]">CONTACTATE CON NOSOTROS</h4>
+                        <h4 class="text-4xl text-white tracking-[0.40rem]">CONTACTATE CON MIGO</h4>
                         <div class="text-white flex flex-col my-10">
                             <figure class="flex items-center gap-4">
                                 <i class="fa-solid fa-phone"></i>
